@@ -1,10 +1,10 @@
 ---
-date: 2021-01-07
-title: מאמר נסיום
+date: 2017-01-15
+title: Client editable Jekyll sites
 video_id: _iH8f5alzWA
-description: זה הוא מאמר נסיון
+description: Have non-technical people update Jekyll sites
 categories:
-  - רכב
+  - deployment
 resources:
   - name: Source code
     link: https://github.com/CloudCannon/creative-jekyll-theme/
