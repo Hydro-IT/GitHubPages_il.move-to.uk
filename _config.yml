@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: Move-To
+title: MOVE-TO
 url: "https://il.move-to.uk/"
 baseurl:
 google_analytics_key:
@@ -25,7 +25,7 @@ social:
 
 timezone: Etc/UTC
 
-permalink: /:title/:categories/
+permalink: /:categories/:title/
 
 plugins:
   - jekyll-extract-element
