@@ -19,7 +19,8 @@ layout: null
 		previewLength = previewLength || (content.length * 2);
 
 		var parts = query.split(" "),
-			match = content.toLowerCase(Locale.ENGLISH).indexOf(query.toLowerCase(Locale.ENGLISH)),
+			//match = content.toLowerCase().indexOf(query.toLowerCase()),
+			match = content.indexOf(query),
 			matchLength = query.length,
 			preview;
 
@@ -29,7 +30,8 @@ layout: null
 				break;
 			}
 
-			match = content.toLowerCase(Locale.ENGLISH).indexOf(parts[i].toLowerCase(Locale.ENGLISH));
+			//match = content.toLowerCase().indexOf(parts[i].toLowerCase());
+			match = content.indexOf(parts[i]);
 			matchLength = parts[i].length;
 		}
 
@@ -76,7 +78,7 @@ layout: null
 			searchProcessEl.innerText = "מציג";
 		} else {
 			searchResultsEl.style.display = "none";
-			searchProcessEl.innerText = "לא";
+			searchProcessEl.innerText = "אין";
 		}
 	}
 
