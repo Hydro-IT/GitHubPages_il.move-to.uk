@@ -14,7 +14,7 @@ layout: default
 	<section class="tutorial-content">
 		<h1>{{ page.title }}</h1>
 
-		{% if page.type == "Video" %}
+		{% if page.type == "Services" %}
 			{% include youtube.html video_id=page.video_id %}
 
 			{% if page.resources %}
@@ -92,8 +92,8 @@ layout: default
 <div id="share" class="modalDialog sharing" dir="auto">
 	<div>
 		<a title="Close" class="close">&times;</a>
-		<h2>Share</h2>
-		<p>Share this tutorial with your community.</p>
+		<h2>שתפו</h2>
+		<p>שתפו את המאמר עם הקהילה.</p>
 		<ul>
 			<li><a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url={{ page.url | prepend: site.url | cgi_escape }}">{% include social-icon.html icon="Twitter" %} Twitter</a></li>
 			<li><a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}">{% include social-icon.html icon="Facebook2" %} Facebook</a></li>
