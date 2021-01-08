@@ -19,8 +19,7 @@ layout: null
 		previewLength = previewLength || (content.length * 2);
 
 		var parts = query.split(" "),
-			//match = content.toLowerCase().indexOf(query.toLowerCase()),
-			match = content.indexOf(query),
+			match = content.toLowerCase().indexOf(query.toLowerCase()),
 			matchLength = query.length,
 			preview;
 
@@ -30,8 +29,7 @@ layout: null
 				break;
 			}
 
-			//match = content.toLowerCase().indexOf(parts[i].toLowerCase());
-			match = content.indexOf(parts[i]);
+			match = content.toLowerCase().indexOf(parts[i].toLowerCase());
 			matchLength = parts[i].length;
 		}
 
