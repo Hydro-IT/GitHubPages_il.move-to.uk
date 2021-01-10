@@ -1,7 +1,0 @@
----
----
-{% assign services = site.posts | where: "type", "Services" | sort: "title" %}
-
-<h2>Services <span class="count">({{ services | size }})</span></h2>
-
-{% include listings.html listings=services %}
